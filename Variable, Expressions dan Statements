@@ -1,0 +1,43 @@
+#Nama : Zefanya Hansnuya
+#NIM : 71200618
+
+'''Tono baru saja pindah ke rumah barunya, rumah barunya memiliki 4 kamar yang tidak ada jam dinding jadi 
+Tono memutuskan untuk pergi ke toko budi untuk membeli jam dinding untuk ke 4 kamarnya. Tono hanya mempunyai 
+uang sebesar Rp.200.000
+List harga barang di toko budi sebagai berikut :
+Kursi = Rp.80.000
+Meja = Rp.120.000
+Jam = Rp.27.000
+Buatlah program kasir toko sederhana sehingga tau barang apa yang dibutuhkan tono, berapa banyak Tono harus 
+mengeluarkan uangnya dan berapakah kembalian yang akan diterima oleh tono ? 
+(jikaada)
+
+Input : U = 200000 J = 270000
+Proses : Buat suatu inputan dari user untuk tau barang apa
+Harga jam x 4
+uangtono - harga jam
+Output : harga jam yang dikeluarin oleh tono
+kembalian tono
+'''
+
+
+#Uang Tono
+Uang_Tono = 200000
+#list harga barang toko budi
+Kursi = 80000
+Meja = 120000
+Jam = 27000
+
+Nama = input(str('Masukkan nama barang =', ))
+harga = eval(Nama)
+jumlah =  input('Masukkan jumlah barang =', )
+
+#Rumus yang digunakan
+Harga_total = (int(harga)) * (int(jumlah))
+
+#Harga total
+print ('Total yang harus dibayar = Rp.',Harga_total)
+
+#Kembalian Tono
+Kembalian = (int(Uang_Tono)) - (int(Harga_total))
+print ('Kembalian yang diterima = Rp.', Kembalian)
