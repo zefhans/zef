@@ -1,0 +1,35 @@
+#Nama   : Zefanya Hansnuya
+#NIM    : 71200618
+
+#Buatlah sebuah program kalkulator sederhana yang isi operasinya berupa 
+#pertambahan, pengurangan, perkalian dan pembagian yang 2 bilangannya merupakan
+#inputan dari user
+#Buatlah program serapi dan semenarik mungkin.
+
+print('Selamat datang di sebuah program kalkulator sederhana \nSilahkan pilih operasi yang akan dipakai :')
+print('1. Untuk operasi pertambahan \n2. Untuk operasi pengurangan \n3. Untuk operasi perkalian \n4. Untuk operasi pembagian ')
+
+#meminta inputan dari user
+pilihan = input('Masukkan operasi yang akan dipakai (1/2/3/4) : ')
+if pilihan == '1':
+    angka1 = int(input('Masukkan bilangan pertama : '))
+    angka2 = int(input('Masukkan bilangan kedua : '))
+    hasil = angka1 + angka2
+    print('Hasil dari bilangan pertama ditambah dengan bilangan kedua :', hasil)
+elif pilihan == '2':
+    angka1 = int(input('Masukkan bilangan pertama : '))
+    angka2 = int(input('Masukkan bilangan kedua : '))
+    hasil = angka1 - angka2
+    print('Hasil dari bilangan pertama dikurangi dengan bilangan kedua :', hasil)
+elif pilihan == '3':
+    angka1 = int(input('Masukkan bilangan pertama : '))
+    angka2 = int(input('Masukkan bilangan kedua : '))
+    hasil = angka1 * angka2
+    print('Hasil dari bilangan pertama dikalikan dengan bilangan kedua :', hasil)
+elif pilihan == '4':
+    angka1 = int(input('Masukkan bilangan pertama : '))
+    angka2 = int(input('Masukkan bilangan kedua : '))
+    hasil = angka1 / angka2
+    print('Hasil dari bilangan pertama pembagian dengan bilangan kedua :', hasil)
+else:
+    print('Input salah! \nSilahkan mulai ulang program!')
