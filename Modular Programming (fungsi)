@@ -1,0 +1,53 @@
+#Nama : Zefanya Hansnuya
+#NIM : 71200618
+
+'''Buatlah suatu program yang dapat menghitung luas & keliling dari 
+persegi dan persegi panjang. Sisi, panjang, dan lebar merupakan inputan dari user.
+
+input : 4 macam pilihan
+        inputan dari user merupakan sisi panjang lebar
+
+proses : If else
+        Rumus luas keliling persegi dan persegi panjang
+
+output : Luas keliling persegi dan persegi panjang''' 
+
+#input
+def luas_persegi(sisi):
+    luas = sisi * sisi
+    return luas
+
+def keliling_persegi(sisi):
+    keliling = sisi * 4
+    return keliling
+
+def luas_persegi_panjang(panjang, lebar):
+    luas = (panjang * lebar)
+    return luas
+
+def keliling_persegi_panjang(panjang,lebar):
+    keliling = (panjang + lebar ) * 2 
+    return keliling
+
+print('Selamat datang di kalkulator penghitungan persegi dan persegi panjang')
+print('Silahkan pilih menu berikut : \n1. Hitung luas persegi \n2. Hitung keliling persegi')
+print('3. Hitung luas persegi panjang \n4. Hitung keliling persegi panjang')
+pilihan = input('Masukkan pilihan anda : ', )
+
+#proses
+if pilihan == '1':
+    sisi = int(input('Masukkan panjang sisi :', ))
+    print('Luas perseginya adalah', luas_persegi(sisi))
+elif pilihan == '2':
+    sisi = int(input('Masukkan panjang sisi :', ))
+    print('Keliling perseginya adalah', keliling_persegi(sisi))
+elif pilihan == '3':
+    panjang = int(input('Masukkan panjang: ', ))
+    lebar = int(input('Masukkan lebar : ', ))
+    print('Luas persegi panjang adalah', luas_persegi_panjang(panjang,lebar))
+elif pilihan == '4':
+    panjang = int(input('Masukkan panjang: ', ))
+    lebar = int(input('Masukkan lebar : ', ))
+    print('Keliling persegi panjang adalah', keliling_persegi_panjang(panjang,lebar))
+else:
+    print('Input salah! Mulai ulang program kembali!')
