@@ -1,0 +1,23 @@
+#Nama : Zefanya Hansnuya
+#NIM : 71200618
+
+'''Buatlah sebuah program yang menampilkan deret bilangan prima, inputan batas merupakan 
+dari user.
+
+input : angka inputan dari user
+
+proses : % == 0
+
+output : 1 2 3 4
+
+'''
+
+
+batas = int(input('Masukkan batas angka = ', ))
+for prima in range (2,batas):
+    mod = 1;
+    for z in range (2,prima):
+        if (prima%z==0):
+            mod=0;
+    if (mod==1):
+        print(prima, end=' ')
