@@ -1,0 +1,28 @@
+#Nama : Zefanya Hansnuya
+#NIM : 71200618
+
+'''Buatlah sebuah pola program python seperti dibawah ini menggunakan string, 
+inputan string merupakan inputan dari user.
+Contoh : 
+inputan dari user : UKDW 
+U                      U
+U K                  U K
+U K D              U K D
+U K D W          U K D W
+
+Input : string input dari user
+
+Proses : for 
+
+Output : 
+'''
+
+kata = input("Masukkan kata yang ingin dibuat pola : ", )
+panjangkata = len(kata)
+
+for baris in range(panjangkata):
+    for kolom in range(panjangkata-baris-1):
+        print(' ',end='  ')
+    for kolom in range(baris+1):
+        print(kata[kolom], end='  ')
+    print()
