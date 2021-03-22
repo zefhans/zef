@@ -1,0 +1,37 @@
+#Nama   : Zefanya Hansnuya
+#NIM    : 71200618
+'''
+Buatlah program yang bisa membalikkan suatu kata, mengubah kata ke huruf besar dan 
+mengubah kata ke huruf kecil, kata merupakan inputan dari user."
+
+Input : inputan dari user
+1. membalikkan suatu kata
+2. mungubah kata ke huruf besar
+3. mengubah kata ke huruf kecil
+pilihan 
+
+Proses : 
+[::-1]
+upper
+lower
+if 
+
+Output : 
+kata terbalik
+huruf besar semuanya
+huruf kecil semuanya
+'''
+
+kata = input("Masukkan kata :", )
+print("1. Membalikkan kata \n2. Mengubah kata ke huruf besar \n3. Mengubah kata ke huruf kecil")
+pilihan = (input("Masukkan pilihan yang akan dipilih :"))
+
+if pilihan == '1':
+    print("Kata sebelumnya :", kata)
+    print("Hasilnya adalah :", kata[::-1])
+elif pilihan == '2':
+    print("Kata sebelumnya :", kata)
+    print("Hasilnya adalah :", kata.upper())
+elif pilihan == '3':
+    print("Kata sebelumnya :", kata)
+    print("Hasilnya adalah :", kata.lower())
