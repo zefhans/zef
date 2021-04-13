@@ -1,0 +1,39 @@
+#Nama   : Zefanya Hansnuya
+#NIM    : 71200618
+
+'''
+Buatlah suatu program yang bisa membaca file.txt, kemudian memprint out file tersebut,
+membagi tiga baris data menjadi beberapa kolom, membuang karakter \n pada string, 
+menyatukan data pada list, kemudian memanggil data yang ada pada list
+input : open("file.txt", "r")
+
+proses : loops   
+split
+replace /n dengan ""
+append
+list[]
+
+output :  
+
+'''
+
+file = open("asalkota.txt", "r")
+
+#loops
+for i in file:
+    print(i,end="")
+
+#split
+print(i.split(" "))
+
+#replace
+i.replace("\n", "")
+
+#append 
+data = []
+data.append(i.split(" "))
+
+#memanggil list
+data[0]
+
+file.close 
