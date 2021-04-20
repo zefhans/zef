@@ -1,0 +1,20 @@
+#Nama   : Zefanya Hansnuya
+#NIM    : 71200618
+'''Buatlah sebuah program yang dapat menghilangkan duplikasi pada suatu list, contoh :
+list = [1,1,2,2,3,4,5]     outputnya : list = [1,2,3,4,5]
+
+input : buat sebuah list 
+
+proses : list baru(kosong)
+        perulangan for
+
+output : list yang sudah benar
+'''
+alist = [19,20,20,20,21,19,25,30] 
+blist = []
+print("List sebelumnya :", alist)
+[blist.append(x)for x in alist if x not in blist]
+print("List terbaru", blist)
+
+
+
