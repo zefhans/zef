@@ -1,0 +1,20 @@
+#Nama   : Zefanya Hansnuya
+#NIM    : 71200618
+'''Buatlah sebuah program yang dapat memindahkan variabel pada bagian tuple utama 
+ke tuple baru yang telah ada variabelnya"
+Contoh :
+tuple = ("messi", "etoo", "gigs") 
+tuple2 = ("dimas", "ryan")
+tuple2 = ("messi", "etoo", "gigs", "dimas", "ryan")
+
+input :  buat tuple
+
+proses : *
+
+output : 
+'''
+
+tuple1 = ("irfan", "dimas", "yosua", "fajar")
+tuple2 = (*tuple1, "tomi", "momo", "nando", "dendi")
+print(tuple2)
+
