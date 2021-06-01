@@ -1,0 +1,28 @@
+#Nama   : Zefanya Hansnuya
+#NIM    : 71200618
+'''
+Buatlah sebuah program yang dapat mengecek angka yang diinput
+merupakan bagian dari bilangan prima atau bukan, menggunakan fungsi rekursif.
+
+input: inputan angka dari user
+
+proses: rumus
+        ya atau tidak
+
+output: 
+
+'''
+
+def prima(n):
+    if n==2 or n==3: return True
+    if n%2==0 or n<2: return False
+    for i in range (3,int(n**0.5)+1,2):
+        if n%i==0:
+            return False
+    return True
+
+a = int(input("Masukkan angka :",))
+if (prima(a)):
+    print(a,"Merupakan bilangan prima")
+else:
+    print(a,"bukan merupakan bilangan prima")
