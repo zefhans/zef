@@ -1,0 +1,31 @@
+#Nama   = Zefanya Hansnuya
+#NIM    = 71200618
+
+'''
+Buatlah suatu program yang dapat menghitung berapa jumlah huruf besar, huruf kecil,
+dan angka yang ada di dalam suatu string
+Contoh kalimat :"DuaKuCing2"
+Huruf besar : 3
+Huruf kecil : 6
+Angka       : 1
+
+input : import re
+kalimat 
+
+proses : re.findall
+
+output :
+'''
+
+import re
+
+kalimat = str(input("Masukkan kalimat :",))
+
+hurufbesar = re.findall(r"[A-Z]", kalimat)
+hurufkecil = re.findall(r"[a-z]", kalimat)
+angka      = re.findall(r"[0-9]", kalimat)
+
+print("Kalimat : ",kalimat)
+print("Huruf besar ada sebanyak", len(hurufbesar))
+print("Huruf kecil ada sebanyak", len(hurufkecil))
+print("Angka ada sebanyak", len(angka))
